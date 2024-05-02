@@ -115,7 +115,7 @@
         <main>
             <div>
                 <picture>
-                    <img src="/ralph-lionel-bides.png" alt="ralph-lionel-bides.png">
+                    <img src="/ralph-lionel-bides.png" alt="self-portrait">
                 </picture>
                 <div class="description">
                     <h1>Ralph Lionel Bides</h1>
