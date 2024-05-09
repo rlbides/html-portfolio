@@ -1,0 +1,236 @@
+body {
+    background-color: #c1e0ff;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.navbar {
+    flex-flow: row wrap;
+}
+
+.img {
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    box-shadow: -1px 5px 6px #171c1f;
+
+    @media (max-width: 500px) {
+        height: 20dvh;
+        width: 20dvh;
+    }
+}
+
+.list {
+    list-style: decimal;
+}
+
+.list-ul {
+    list-style: disc;
+}
+
+.list-ul-2 {
+    list-style: square;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+footer {
+    bottom: 0;
+}
+
+.porfolio-card-container {
+    gap: 1rem;
+}
+
+@media (max-width: 500px) {
+    .porfolio-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .porfolio-card-container img {
+        align-self: center;
+    }
+
+    .portfolio-description {
+        max-width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 0 !important;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .welcome-message {
+        margin: 0 auto;
+    }
+
+    .portfolio {
+        margin: 2rem auto;
+    }
+
+    .name {
+        font-size: 2.3rem;
+    }
+
+    .--paragraph-container {
+        padding-top: 8rem !important;
+        padding-bottom: 8rem !important;
+    }
+
+    .--image-slider-pc {
+        display: none !important;
+    }
+
+    .--image-slider-mobile {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block !important;
+    }
+
+    .links-center, .links-end {
+        display: none !important;
+    }
+}
+
+@media (min-width: 540px) {
+    .--image-slider-pc {
+        display: flex;
+    }
+
+    .--image-slider-mobile {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+}
+
+textarea {
+    font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif, serif;
+}
+
+.links-end {
+    @media (max-width: 500px) {
+        margin-top: 1rem;
+
+        .contact-link,
+        .github-link {
+            background-color: #7099f3;
+            padding: 0;
+        }
+    }
+}
+
+.divider {
+    padding: 0 1rem;
+
+    @media (min-width: 540px) {
+        display: none;
+    }
+}
+
+.kld--form {
+    @media (max-width: 500px) {
+        max-width: 100%;
+    }
+
+    @media (min-width: 540px) {
+        max-width: 30dvw;
+    }
+}
+
+.--image-slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1rem;
+    background: url("../../assets/img/bg-image.png") no-repeat center/cover;
+    img {
+        min-height: 100%;
+        object-fit: contain;
+    }
+}
+
+.--image-slider > * {
+    scroll-snap-align: center;
+}
+
+.prev-btn,
+.next-btn {
+    width: 7rem;
+    height: 7rem;
+    align-self: center;
+    justify-self: center;
+
+    @media (max-width: 500px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.mobile-li > a{
+    display: flex !important;
+    justify-content: center;
+}
+
+.mobile-li:hover {
+    background-color: #aec5f7;
+
+    a {
+        color: rgb(95, 95, 7);
+    }
+}
+
+.sidebar {
+    transform: translateX(10000rem);
+    transition: all 0.6s ease;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    background-color: #131316;
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+.body {
+    overflow-x: hidden !important;
+}
+
+.padding1 {
+    padding-left: 5rem;
+}
+.padding2 {
+    padding-left: 5rem;
+}
+.padding3 {
+    padding-left: 5rem;
+}
